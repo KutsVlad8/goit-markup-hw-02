@@ -18,7 +18,8 @@
   --primary-heading-color: #212121;
   --accent-color: #2196f3;
   --text-change-color: #ffffff;
-  --logo-text-color: #000000;
+  --header-logo-color: #000000;
+  --footer-logo-color: #ffffff;
   --text-color-map: #ffffff;
   --text-nav-color: #212121;
   --background-color: #ffffff;
@@ -42,13 +43,8 @@ body {
   list-style: none;
 }
 
-.studoi {
-  color: var(--accent-color);
-}
-
 /* header */
 .logo {
-  color: var(--logo-text-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -57,6 +53,9 @@ body {
 }
 .logo .span {
   color: var(--accent-color);
+}
+header .logo {
+  color: var(--header-logo-color);
 }
 /* site-nav */
 .site-nav .link {
@@ -162,7 +161,6 @@ body {
 .section-features .features-title {
   color: var(--primary-heading-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -194,7 +192,7 @@ body {
   line-height: 1.19;
 }
 
-.section .text-team {
+.section-team .text-team {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -244,6 +242,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.section-portfolio a {
+  text-decoration: none;
+}
 
 .section-portfolio .portfolio-text {
   color: var(--primary-text-color);
@@ -255,10 +256,17 @@ body {
 .footer {
   background-color: var(--background-footer);
 }
+
+.footer .logo {
+  color: var(--footer-logo-color);
+}
+
+.footer address {
+  font-style: normal;
+}
 .site-adress .map {
   color: var(--text-color-map);
   text-decoration: none;
-  font-size: 14px;
   line-height: 1.71;
 }
 .site-adress .map:hover,
@@ -268,7 +276,6 @@ body {
 .site-adress .contact {
   color: var(--text-adress-color);
   text-decoration: none;
-  font-size: 14px;
   line-height: 1.71;
 }
 .site-adress .contact:hover,
